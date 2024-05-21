@@ -1637,11 +1637,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\MotorsFestSorteio\\server\\ServerSorteio\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
+      "projectUniqueName": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
       "projectName": "ServerSorterio.Api",
-      "projectPath": "D:\\Work\\MotorsFestSorteio\\server\\ServerSorteio\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
+      "projectPath": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
       "packagesPath": "C:\\Users\\android\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\MotorsFestSorteio\\server\\ServerSorteio\\ServerSorterio.Api\\obj\\",
+      "outputPath": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\android\\AppData\\Roaming\\NuGet\\NuGet.Config",

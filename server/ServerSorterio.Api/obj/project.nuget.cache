@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8+ZXu5Pvf+OySBSJwnJ/huK8jN4vTiotmj/ks4v/WNssANeSUAkE2ScitophkLcg2vNE4dmQpCC78V2xLI0ZOw==",
+  "dgSpecHash": "wZMXuuyQe3nzmyD9i0eFYm0PjHCaJI33JoBIEFXyi1DHxeNhvtzEbtrwRilXqaigHdU8p/kT+LsI9G+IzzkGnw==",
   "success": true,
-  "projectFilePath": "D:\\Work\\MotorsFestSorteio\\server\\ServerSorteio\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
+  "projectFilePath": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\ServerSorterio.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\android\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

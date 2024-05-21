@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ServerSorterio.Api.Domain;
 using ServerSorterio.Api.Infra;
 
 namespace ServerSorterio.Api.Controllers
@@ -8,10 +9,10 @@ namespace ServerSorterio.Api.Controllers
     public class SorteioController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<IList<NumeroSorteadoEntity>> RetornaNumerosSorteados()
         {
-            ConexaoHelper.CriarBancoSQLite();
-            return Ok();
+            var listaNumerosSorteados = ConexaoHelper.RetornaNumerosSorteados();
+            return Ok(listaNumerosSorteados);
         }
 
         [HttpPost("{numero}")]
@@ -27,5 +28,7 @@ namespace ServerSorterio.Api.Controllers
             ConexaoHelper.ExcluirNumeroSorteado(numero);
             return Ok();
         }
+
+
     }
 }

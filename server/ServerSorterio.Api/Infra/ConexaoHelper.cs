@@ -1,12 +1,13 @@
-﻿using System.Data.SQLite;
+﻿using ServerSorterio.Api.Domain;
 using System.Data;
+using System.Data.SQLite;
 
 namespace ServerSorterio.Api.Infra;
 
 public class ConexaoHelper
 {
     private static SQLiteConnection? sqliteConnection;
-    private static readonly string LocalDatabase = "D:\\Work\\MotorsFestSorteio\\data\\Sorteio.sqlite";
+    public static string LocalDatabase = "D:\\Work\\MotorsFestSorteio\\data\\Sorteio.sqlite";
     public ConexaoHelper()
     { }
     private static SQLiteConnection DbConnection()
@@ -24,7 +25,7 @@ public class ConexaoHelper
                 SQLiteConnection.CreateFile($"{LocalDatabase}");
 
                 using var cmd = DbConnection().CreateCommand();
-                cmd.CommandText = "CREATE TABLE IF NOT EXISTS Sorteio(numero int)";
+                cmd.CommandText = "CREATE TABLE NumerosSorteados(numero int primary key, vencedor text)";
                 cmd.ExecuteNonQuery();
             }
         }
@@ -33,18 +34,47 @@ public class ConexaoHelper
             throw;
         }
     }
-    
-    public static DataTable RetornaNumerosSorteados()
+
+    public static IList<NumeroSorteadoEntity> RetornaNumerosSorteados()
     {
-        SQLiteDataAdapter? da = null;
+        var listaNumerosSorteados = new List<NumeroSorteadoEntity>();
         DataTable dt = new();
         try
         {
             using var cmd = DbConnection().CreateCommand();
-            cmd.CommandText = "SELECT * FROM Sorteio";
-            da = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
+            cmd.CommandText = "SELECT * FROM NumerosSorteados ORDER BY numero";
+            SQLiteDataAdapter? da = new(cmd.CommandText, DbConnection());
             da.Fill(dt);
-            return dt;
+
+            foreach (DataRow dr in dt.Rows)
+            {
+                var numeroSorteado = new NumeroSorteadoEntity()
+                {
+                    Numero = Convert.ToInt32(dr["numero"]),
+                    Vencedor = dr["vencedor"].ToString() == "S"
+                };
+                listaNumerosSorteados.Add(numeroSorteado);
+            };
+
+            return listaNumerosSorteados;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+
+    public static bool JaExisteNumeroVencedor()
+    {
+        DataTable dt = new();
+        try
+        {
+            using var cmd = DbConnection().CreateCommand();
+            cmd.CommandText = $"SELECT * FROM NumerosSorteados where vencedor = 'S'";
+            SQLiteDataAdapter? da = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
+            da.Fill(dt);
+
+            return dt.Rows.Count > 0;
         }
         catch (Exception)
         {
@@ -58,7 +88,7 @@ public class ConexaoHelper
         try
         {
             using var cmd = DbConnection().CreateCommand();
-            cmd.CommandText = $"SELECT * FROM Sorteio where numero = {numero}";
+            cmd.CommandText = $"SELECT * FROM NumerosSorteados where numero = {numero}";
             SQLiteDataAdapter? da = new SQLiteDataAdapter(cmd.CommandText, DbConnection());
             da.Fill(dt);
             return dt;
@@ -71,6 +101,11 @@ public class ConexaoHelper
 
     public static void AdicionaNumero(int numeroSorteado)
     {
+        if (JaExisteNumeroVencedor())
+        {
+            throw new BadHttpRequestException($"Já existe um número vencedor");
+        }
+
         if (numeroSorteado < 1)
         {
             throw new BadHttpRequestException($"O número deve ser maior ou igual a 1");
@@ -89,9 +124,17 @@ public class ConexaoHelper
         try
         {
             using var cmd = DbConnection().CreateCommand();
-            cmd.CommandText = "INSERT INTO Sorteio(numero) values (@numero)";
+            cmd.CommandText = "INSERT INTO NumerosSorteados(numero, vencedor) values (@numero, 'N')";
             cmd.Parameters.AddWithValue("@numero", numeroSorteado);
             cmd.ExecuteNonQuery();
+
+            var numeroGanhador = RetornaNumeroGanhador();
+            if (numeroGanhador > 0)
+            {
+                cmd.CommandText = "INSERT INTO NumerosSorteados(numero, vencedor) values (@numero, 'S')";
+                cmd.Parameters.AddWithValue("@numero", numeroGanhador);
+                cmd.ExecuteNonQuery();
+            }
         }
         catch (Exception)
         {
@@ -99,8 +142,30 @@ public class ConexaoHelper
         }
     }
 
+    public static int RetornaNumeroGanhador()
+    {
+        var numerosSorteados = RetornaNumerosSorteados();
+        if (numerosSorteados.Count >= 299 )
+        {
+            for (int numero = 1; numero <= 300; numero++) {
+                var consulta = numerosSorteados.Where(x => x.Numero == numero).ToList();
+
+                if (consulta.Count == 0)
+                {
+                    return numero;
+                }
+            }
+        }
+        return 0;
+    }
+
     public static void ExcluirNumeroSorteado(int numero)
     {
+        if (JaExisteNumeroVencedor())
+        {
+            throw new BadHttpRequestException($"Já existe um número vencedor");
+        }
+
         var numeroJaExiste = RetornaNumero(numero);
         if (numeroJaExiste.Rows.Count == 0)
         {
@@ -110,7 +175,7 @@ public class ConexaoHelper
         try
         {
             using var cmd = new SQLiteCommand(DbConnection());
-            cmd.CommandText = "DELETE FROM Sorteio Where numero=@numero";
+            cmd.CommandText = "DELETE FROM NumerosSorteados Where numero=@numero";
             cmd.Parameters.AddWithValue("@numero", numero);
             cmd.ExecuteNonQuery();
         }
