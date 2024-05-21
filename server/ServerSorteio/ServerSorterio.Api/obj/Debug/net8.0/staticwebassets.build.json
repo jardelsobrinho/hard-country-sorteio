@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nyzRuWBha8SrKRbQK2idewaIsbQk5O1V+lJYwbAkksg=",
+  "Source": "ServerSorterio.Api",
+  "BasePath": "_content/ServerSorterio.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
