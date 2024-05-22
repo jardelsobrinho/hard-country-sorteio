@@ -4,7 +4,7 @@
     :disabled="props.disabled"
     @click="emit('onClick')"
   >
-    Adicionar
+    {{ props.label }}
   </button>
 </template>
 

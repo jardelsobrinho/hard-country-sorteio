@@ -1,8 +1,8 @@
 <template>
   <RouterLink :to="props.to">
     <div
-      class="py-2 px-4 rounded-full"
-      :class="[linkAtual ? 'bg-green-400 text-gray-800' : 'text-gray-400']"
+      class="py-2 px-4"
+      :class="[linkAtual ? 'bg-gray-800 text-white' : 'border border-gray-800 text-gray-400']"
     >
       {{ props.label }}
     </div>

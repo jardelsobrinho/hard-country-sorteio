@@ -14,7 +14,7 @@
       </div>
 
       <div>
-        <AppButton :disabled="disabled" @on-click="onAdicionar" label="Adicionar" />
+        <AppButton :disabled="disabled" @on-click="onAdicionar" :label="labelButton" />
       </div>
     </div>
     <AppErro v-model="erroApi" />
@@ -36,9 +36,9 @@ const numeroSorteado = ref(0)
 const erroApi = ref('')
 const sucessoApi = ref(false)
 const disabled = ref(false)
+const labelButton = ref('Adicionar')
 
 watch(numeroSorteado, (newValue) => {
-  erroApi.value = ''
   let valorAux = newValue.toString()
   if (valorAux.length > 3) {
     valorAux = valorAux.substring(0, 3)
@@ -47,6 +47,7 @@ watch(numeroSorteado, (newValue) => {
 })
 
 const onAdicionar = async () => {
+  labelButton.value = 'Aguarde...'
   sucessoApi.value = false
   disabled.value = true
   try {
@@ -60,10 +61,18 @@ const onAdicionar = async () => {
     if (axios.isAxiosError(error)) {
       erroApi.value = error.response?.data.title
       console.log(error.response?.data)
+
+      setTimeout(() => {
+        erroApi.value = ''
+      }, 3000)
     } else {
       alert(error)
     }
   }
-  disabled.value = false
+
+  setTimeout(() => {
+    disabled.value = false
+    labelButton.value = 'Adicionar'
+  }, 2000)
 }
 </script>

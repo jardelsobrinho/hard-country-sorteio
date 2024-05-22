@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\Work\\motorfest-sorteio\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\infra\\conexaohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\infra\\conexaohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\infra\\conexaohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\infra\\conexaohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\controllers\\sorteiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\controllers\\sorteiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\hubs\\inotificationhubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\hubs\\inotificationhubclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\configs\\errorhandleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\domain\\numerosorteadoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\domain\\numerosorteadoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|d:\\work\\motorfest-sorteio\\server\\serversorterio.api\\controllers\\sorteiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C04389F5-BFF0-414D-965A-0D81BE14A990}|ServerSorterio.Api\\ServerSorterio.Api.csproj|solutionrelative:serversorterio.api\\controllers\\sorteiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +58,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ServerSorterio.Api\\appsettings.Development.json",
+              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\appsettings.Development.json",
+              "RelativeToolTip": "ServerSorterio.Api\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T19:03:31.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ServerSorterio.Api\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ServerSorterio.Api\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-22T18:28:43.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConexaoHelper.cs",
+              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
+              "RelativeDocumentMoniker": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
+              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
+              "RelativeToolTip": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAmwI8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T16:58:49.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INotificationHubClient.cs",
+              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Hubs\\INotificationHubClient.cs",
+              "RelativeDocumentMoniker": "ServerSorterio.Api\\Hubs\\INotificationHubClient.cs",
+              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Hubs\\INotificationHubClient.cs",
+              "RelativeToolTip": "ServerSorterio.Api\\Hubs\\INotificationHubClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:30:52.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Hubs\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "ServerSorterio.Api\\Hubs\\NotificationHub.cs",
+              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Hubs\\NotificationHub.cs",
+              "RelativeToolTip": "ServerSorterio.Api\\Hubs\\NotificationHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:24:00.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ErrorHandleExtensions.cs",
               "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Configs\\ErrorHandleExtensions.cs",
               "RelativeDocumentMoniker": "ServerSorterio.Api\\Configs\\ErrorHandleExtensions.cs",
@@ -54,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "NumeroSorteadoEntity.cs",
               "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Domain\\NumeroSorteadoEntity.cs",
               "RelativeDocumentMoniker": "ServerSorterio.Api\\Domain\\NumeroSorteadoEntity.cs",
@@ -66,14 +147,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Program.cs",
               "RelativeDocumentMoniker": "ServerSorterio.Api\\Program.cs",
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Program.cs",
               "RelativeToolTip": "ServerSorterio.Api\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T18:25:41.217Z"
+              "WhenOpened": "2024-05-21T18:25:41.217Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -83,8 +166,10 @@
               "RelativeDocumentMoniker": "ServerSorterio.Api\\appsettings.json",
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\appsettings.json",
               "RelativeToolTip": "ServerSorterio.Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-21T18:24:57.19Z"
+              "WhenOpened": "2024-05-21T18:24:57.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -94,21 +179,9 @@
               "RelativeDocumentMoniker": "ServerSorterio.Api\\Controllers\\SorteioController.cs",
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Controllers\\SorteioController.cs",
               "RelativeToolTip": "ServerSorterio.Api\\Controllers\\SorteioController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAowAUAAAABAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAywB4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T17:53:40.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConexaoHelper.cs",
-              "DocumentMoniker": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
-              "RelativeDocumentMoniker": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
-              "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
-              "RelativeToolTip": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAowEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T17:44:01.163Z",
+              "WhenOpened": "2024-05-21T17:53:40.95Z",
               "EditorCaption": ""
             }
           ]

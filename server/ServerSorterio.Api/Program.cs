@@ -1,4 +1,5 @@
 using ServerSorterio.Api.Configs;
+using ServerSorterio.Api.Hubs;
 using ServerSorterio.Api.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSignalR();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CORSPolicy",
@@ -33,4 +35,5 @@ if (app.Environment.IsDevelopment())
 app.UseCors("CORSPolicy");
 app.UseAuthorization();
 app.MapControllers();
-app.Run();
+app.MapHub<NotificationHub>("/notificationHub");
+app.Run("http://*:7000");
