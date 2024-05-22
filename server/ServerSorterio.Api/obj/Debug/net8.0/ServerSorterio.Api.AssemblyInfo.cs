@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServerSorterio.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6c92fd4a1b033b0a5969241b171078f1b9f2a69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3422a868c8c4c169675f7c51a15a348858185365")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServerSorterio.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServerSorterio.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
