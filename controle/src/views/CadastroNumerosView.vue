@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2">
-    <div class="text-3xl text-white font-bold">CADASTRO DE NÚMEROS</div>
+    <AppTitle title="CADASTRO DE NÚMEROS" />
     <div class="flex flex-row gap-4 justify- items-end pt-4">
       <div class="flex flex-col gap-4">
         <label class="text-white text-3xl">Número Sorteado</label>
@@ -14,22 +14,11 @@
       </div>
 
       <div>
-        <button
-          class="bg-green-400 py-4 px-8 rounded-full text-3xl font-bold text-gray-800 hover:bg-green-300"
-          @click="onAdicionar"
-          :disabled="disabled"
-        >
-          Adicionar
-        </button>
+        <AppButton :disabled="disabled" @on-click="onAdicionar" label="Adicionar" />
       </div>
     </div>
-    <div class="flex flex-col w-6/12 p-4 bg-red-400" v-if="erroApi != ''">
-      <div class="text-2xl font-bold">
-        {{ erroApi }}
-      </div>
-    </div>
-
-    <div class="flex flex-col w-6/12 p-4 bg-green-500" v-if="sucessoApi">
+    <AppErro v-model="erroApi" />
+    <div class="flex flex-col p-4 bg-green-500" v-if="sucessoApi">
       <div class="text-2xl font-bold">Numero cadastrado com sucesso!!</div>
     </div>
   </div>
@@ -39,6 +28,9 @@
 import { ref, watch } from 'vue'
 import axios from 'axios'
 import { client } from '../services/ClientService'
+import AppButton from '@/components/AppButton.vue'
+import AppTitle from '@/components/AppTitle.vue'
+import AppErro from '@/components/AppErro.vue'
 
 const numeroSorteado = ref(0)
 const erroApi = ref('')

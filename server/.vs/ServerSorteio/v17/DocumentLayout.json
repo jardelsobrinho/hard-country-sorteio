@@ -34,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -77,8 +73,7 @@
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Program.cs",
               "RelativeToolTip": "ServerSorterio.Api\\Program.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T18:25:41.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T18:25:41.217Z"
             },
             {
               "$type": "Document",
@@ -89,8 +84,7 @@
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\appsettings.json",
               "RelativeToolTip": "ServerSorterio.Api\\appsettings.json",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-21T18:24:57.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T18:24:57.19Z"
             },
             {
               "$type": "Document",
@@ -112,6 +106,7 @@
               "RelativeDocumentMoniker": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
               "ToolTip": "D:\\Work\\motorfest-sorteio\\server\\ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
               "RelativeToolTip": "ServerSorterio.Api\\Infra\\ConexaoHelper.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAowEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T17:44:01.163Z",
               "EditorCaption": ""

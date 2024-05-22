@@ -11,9 +11,9 @@ const router = createRouter({
       component: CadastroNumerosView
     },
     {
-      path: '/numeros_sorteados',
-      name: 'numeros_sorteados',
-      component: () => import('../views/NumerosSorteadosView.vue')
+      path: '/excluir_numeros',
+      name: 'excluir_numeros',
+      component: () => import('../views/ExcluirNumerosView.vue')
     }
   ]
 })
