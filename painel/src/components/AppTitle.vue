@@ -1,5 +1,7 @@
 <template>
-  <div class="text-5xl text-white font-bold">{{ props.title }}</div>
+  <div class="text-5xl text-white font-bold">
+    {{ props.title }}
+  </div>
 </template>
 
 <script setup lang="ts">

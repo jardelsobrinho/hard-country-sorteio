@@ -1,9 +1,13 @@
 <template>
   <div class="flex w-full h-screen bg-black justify-center">
     <div class="flex flex-col container gap-2 items-center">
-      <div class="flex flex-row items-center gap-4 justify-between">
+      <div class="flex flex-row items-center w-full gap-4 justify-evenly">
         <img src="./assets/logo.png" class="w-24" />
         <AppTitle title="SORTEIO HARD COUNTRY 2024" />
+        <div>
+          <div class="text-xs text-gray-200">Patrocínado por</div>
+          <img src="./assets/logo_bless.jpg" class="w-32 mt-2 rounded-lg" />
+        </div>
       </div>
       <AppErro v-model="erroApi" />
       <div class="flex flex-wrap gap-1">
