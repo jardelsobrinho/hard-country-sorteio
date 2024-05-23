@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BhE80JbHIpLeoth98HivuVfqXdCL47ECttRKBF6KXt0=",
+  "Source": "ServerSorteio.Api",
+  "BasePath": "_content/ServerSorteio.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

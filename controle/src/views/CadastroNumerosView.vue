@@ -19,7 +19,7 @@
     </div>
     <AppErro v-model="erroApi" />
     <div class="flex flex-col p-4 bg-green-500" v-if="sucessoApi">
-      <div class="text-2xl font-bold">Numero cadastrado com sucesso!!</div>
+      <div class="text-2xl font-bold">Número cadastrado com sucesso!!</div>
     </div>
   </div>
 </template>

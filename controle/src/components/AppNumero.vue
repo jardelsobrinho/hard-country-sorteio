@@ -19,7 +19,7 @@ const emit = defineEmits<{
 }>()
 
 const onExcluir = async () => {
-  if (confirm('Tem certeza que deseja excluir o número ' + props.numero)) {
+  if (confirm('Tem certeza que deseja excluir o número ' + props.numero + ' ?')) {
     try {
       await client.delete('api/Sorteio/' + props.numero)
       alert('Número ' + props.numero + ' excluído com sucesso!')

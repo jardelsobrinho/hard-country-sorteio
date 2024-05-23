@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "moqYsgKSp3aIPs7Nwiu85Z6Sod9ENKk/52yq6rYUN7A=",
+  "Source": "ServerSorteio.Api",
+  "BasePath": "_content/ServerSorteio.Api",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

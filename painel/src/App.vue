@@ -5,7 +5,7 @@
         <img src="./assets/logo.png" class="w-24" />
         <AppTitle title="SORTEIO HARD COUNTRY 2024" />
         <div>
-          <div class="text-xs text-gray-200">Patrocínado por</div>
+          <div class="text-xs text-gray-200">Patrocinado por</div>
           <img src="./assets/logo_bless.jpg" class="w-32 mt-2 rounded-lg" />
         </div>
       </div>
