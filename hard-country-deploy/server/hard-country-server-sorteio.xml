@@ -1,0 +1,18 @@
+﻿<configuration>
+
+  <id>hard-country-server-sorteio</id>
+  <name>Hard Country Server Sorteio</name>
+  <description>Gerenciar informações para realizar o sorteio</description>
+  <workingdirectory>%BASE%\</workingdirectory>
+  
+  <logpath>%BASE%\logs</logpath>
+  <log mode="roll-by-time">
+      <pattern>dd_MM_yyyy</pattern>
+      <zipOlderThanNumDays>5</zipOlderThanNumDays>
+      <zipDateFormat>dd_MM_yyyy</zipDateFormat>
+    </log>
+
+  <executable>dotnet</executable>
+  <arguments>ServerSorteio.Api.dll </arguments>
+
+</configuration>
